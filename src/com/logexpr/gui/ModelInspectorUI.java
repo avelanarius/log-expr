@@ -23,7 +23,7 @@ public class ModelInspectorUI {
     private JFrame frame;
 
     private void createWindow() {
-        frame = new JFrame("Inspektor modelu");
+        frame = new JFrame("Model inspector");
         frame.setContentPane(this.contentPane);
         frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         frame.pack();
@@ -47,8 +47,8 @@ public class ModelInspectorUI {
                 if (z3Output.nextValues()) {
                     updateTable();
                 } else {
-                    JOptionPane.showMessageDialog(ModelInspectorUI.this.frame, "Nie istnieje kolejne wartościowanie!",
-                            "Brak wartościowania", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(ModelInspectorUI.this.frame, "No next variable values!",
+                            "No variable values", JOptionPane.INFORMATION_MESSAGE);
                     buttonInne.setEnabled(false);
                 }
             }
@@ -77,7 +77,7 @@ public class ModelInspectorUI {
 
     public void setNazwaModelu(String nazwaModelu) {
         this.labelNazwaModelu.setText(nazwaModelu);
-        frame.setTitle("Inspektor modelu: " + nazwaModelu);
+        frame.setTitle("Model inspector: " + nazwaModelu);
     }
 
     public void setOpis(String opis) {

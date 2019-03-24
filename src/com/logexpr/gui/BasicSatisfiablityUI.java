@@ -20,14 +20,16 @@ public class BasicSatisfiablityUI extends JComponent {
         updateGUI();
         pokazPrzykladFalszBasicSat.addActionListener(e -> {
             ModelInspectorUI inspectorUI = new ModelInspectorUI(basicSatisfiablityAnalysis.getFalseOutput(),
-                    "Wyrażenie fałszywe", "Przykład wartości zmiennych, dla których podany warunek jest fałszywy i zgodny z dziedziną");
+                    "False expression",
+                    "Example variable values with condition false and in domain");
 
         });
         pokazPrzykladPrawdaBasicSat.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 ModelInspectorUI inspectorUI = new ModelInspectorUI(basicSatisfiablityAnalysis.getTrueOutput(),
-                        "Wyrażenie prawdziwe", "Przykład wartości zmiennych, dla których podany warunek jest prawdziwy i zgodny z dziedziną");
+                        "True expression",
+                        "Example variable values with condition true and in domain");
             }
         });
     }
@@ -64,15 +66,15 @@ public class BasicSatisfiablityUI extends JComponent {
     private void updateFalseValueUI() {
         if (basicSatisfiablityAnalysis.getFalseStatus().equals(Status.SATISFIABLE)) {
             pokazPrzykladFalszBasicSat.setEnabled(true);
-            labelFalszBasicSat.setText("Istnieje");
+            labelFalszBasicSat.setText("Exists");
             labelFalszBasicSat.setIcon(getIcon("checked.png"));
         } else if (basicSatisfiablityAnalysis.getFalseStatus().equals(Status.UNKNOWN)) {
             pokazPrzykladFalszBasicSat.setEnabled(false);
-            labelFalszBasicSat.setText("Nie wiadomo");
+            labelFalszBasicSat.setText("Unknown");
             labelFalszBasicSat.setIcon(getIcon("question-sign.png"));
         } else {
             pokazPrzykladFalszBasicSat.setEnabled(false);
-            labelFalszBasicSat.setText("Nie istnieje");
+            labelFalszBasicSat.setText("Does not exist");
             labelFalszBasicSat.setIcon(getIcon("cancel.png"));
         }
     }
@@ -80,15 +82,15 @@ public class BasicSatisfiablityUI extends JComponent {
     private void updateTrueValueUI() {
         if (basicSatisfiablityAnalysis.getTrueStatus().equals(Status.SATISFIABLE)) {
             pokazPrzykladPrawdaBasicSat.setEnabled(true);
-            labelPrawdaBasicSat.setText("Istnieje");
+            labelPrawdaBasicSat.setText("Exists");
             labelPrawdaBasicSat.setIcon(getIcon("checked.png"));
         } else if (basicSatisfiablityAnalysis.getTrueStatus().equals(Status.UNKNOWN)) {
             pokazPrzykladPrawdaBasicSat.setEnabled(false);
-            labelPrawdaBasicSat.setText("Nie wiadomo");
+            labelPrawdaBasicSat.setText("Unknown");
             labelPrawdaBasicSat.setIcon(getIcon("question-sign.png"));
         } else {
             pokazPrzykladPrawdaBasicSat.setEnabled(false);
-            labelPrawdaBasicSat.setText("Nie istnieje");
+            labelPrawdaBasicSat.setText("Does not exist");
             labelPrawdaBasicSat.setIcon(getIcon("cancel.png"));
         }
     }

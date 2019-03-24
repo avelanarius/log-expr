@@ -51,7 +51,7 @@ public class ErrorUI {
     private JFrame frame;
 
     private void createWindow() {
-        frame = new JFrame("Błąd!");
+        frame = new JFrame("Error!");
         frame.setContentPane(this.contentPane);
         frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         frame.pack();

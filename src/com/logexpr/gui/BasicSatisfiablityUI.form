@@ -37,7 +37,7 @@
                 <properties>
                   <font size="13" style="1"/>
                   <foreground color="-65536"/>
-                  <text value="Fałsz:"/>
+                  <text value="False:"/>
                 </properties>
               </component>
               <component id="141e9" class="javax.swing.JLabel">
@@ -47,7 +47,7 @@
                 <properties>
                   <font size="13" style="1"/>
                   <foreground color="-16722432"/>
-                  <text value="Prawda:"/>
+                  <text value="True:"/>
                 </properties>
               </component>
               <component id="99e25" class="javax.swing.JLabel" binding="labelPrawdaBasicSat">
@@ -57,7 +57,7 @@
                 <properties>
                   <font size="13"/>
                   <icon value="question-sign.png"/>
-                  <text value="Nie wiadomo"/>
+                  <text value="Unknown"/>
                 </properties>
               </component>
               <component id="deda8" class="javax.swing.JButton" binding="pokazPrzykladPrawdaBasicSat">
@@ -67,7 +67,7 @@
                 <properties>
                   <enabled value="false"/>
                   <font size="13"/>
-                  <text value="Pokaż przykład"/>
+                  <text value="Show example"/>
                 </properties>
               </component>
               <component id="14220" class="javax.swing.JButton" binding="pokazPrzykladFalszBasicSat">
@@ -77,7 +77,7 @@
                 <properties>
                   <enabled value="false"/>
                   <font size="13"/>
-                  <text value="Pokaż przykład"/>
+                  <text value="Show example"/>
                 </properties>
               </component>
               <component id="c202d" class="javax.swing.JLabel" binding="labelFalszBasicSat">
@@ -87,7 +87,7 @@
                 <properties>
                   <font size="13"/>
                   <icon value="question-sign.png"/>
-                  <text value="Nie wiadomo"/>
+                  <text value="Unknown"/>
                 </properties>
               </component>
               <grid id="6bcfb" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -110,7 +110,7 @@
                       <font size="16" style="1"/>
                       <horizontalAlignment value="0"/>
                       <icon value="search.png"/>
-                      <text value="Nie wiadomo jakie wartości logiczne przyjmuje wyrażenie."/>
+                      <text value="Unknown result"/>
                     </properties>
                   </component>
                 </children>

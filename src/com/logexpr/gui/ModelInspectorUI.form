@@ -101,7 +101,7 @@
             <properties>
               <font size="13"/>
               <icon value="info-button.png"/>
-              <text value="Brak opisu modelu."/>
+              <text value="Model description empty."/>
             </properties>
           </component>
         </children>
@@ -130,7 +130,7 @@
             </constraints>
             <properties>
               <font size="13"/>
-              <text value="Następne"/>
+              <text value="Next"/>
             </properties>
           </component>
         </children>

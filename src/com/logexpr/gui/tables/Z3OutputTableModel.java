@@ -50,9 +50,9 @@ public class Z3OutputTableModel extends AbstractTableModel {
     public String getColumnName(int column) {
         switch (column) {
             case 0:
-                return "Nazwa zmiennej";
+                return "Variable name";
             case 1:
-                return "Wartość";
+                return "Value";
         }
         return "";
     }

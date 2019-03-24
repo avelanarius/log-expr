@@ -38,8 +38,8 @@ public class CasesSatisfiabilityUI extends JComponent {
 
                     if (z3Output != null && z3Output.isSatisfiable()) {
                         ModelInspectorUI inspectorUI = new ModelInspectorUI(z3Output,
-                                "Wyrażenie " + (logicalExpressionState ? "prawdziwe" : "fałszywe"),
-                                "Zmienna logiczna " + nazwaZmiennej + " jest " + (variableState ? "prawdziwa" : "fałszywa"));
+                                "Condition " + (logicalExpressionState ? "true" : "false"),
+                                "Logical variable " + nazwaZmiennej + " is " + (variableState ? "true" : "false"));
                     }
                 }
             }

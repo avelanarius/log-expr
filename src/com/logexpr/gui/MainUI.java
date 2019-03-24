@@ -71,12 +71,12 @@ public class MainUI {
 
     private void analizujProblemButtonDisable() {
         analizujProblemButton.setEnabled(false);
-        analizujProblemButton.setText("Wykonano analizę!");
+        analizujProblemButton.setText("Analysis done!");
     }
 
     private void analizujProblemButtonEnable() {
         analizujProblemButton.setEnabled(true);
-        analizujProblemButton.setText("Analizuj problem");
+        analizujProblemButton.setText("Analyze problem");
     }
 
     private void analyzeProblem(String domain, String logicalExpression) {
@@ -86,7 +86,7 @@ public class MainUI {
             this.basicSatisfiablityUI.update(definition);
             this.casesSatisfiabilityUI.update(definition);
         } else {
-            analizujProblemButton.setText("Błąd w definicji!");
+            analizujProblemButton.setText("Definition problem!");
             this.showDefinitionErrors(definition);
         }
     }

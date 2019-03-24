@@ -17,7 +17,7 @@
         <properties>
           <font size="18" style="1"/>
           <icon value="error.png"/>
-          <text value=" Błąd!"/>
+          <text value="Error!"/>
         </properties>
       </component>
       <component id="ee96a" class="javax.swing.JButton" binding="OKButton" default-binding="true">

@@ -54,11 +54,11 @@ public class CasesSatisfiabilityTableModel extends AbstractTableModel implements
     public String getColumnName(int column) {
         switch (column) {
             case 0:
-                return "Zmienna logiczna (wartość)";
+                return "Logical variable (value)";
             case 1:
-                return "Fałsz";
+                return "False";
             case 2:
-                return "Prawda";
+                return "True";
         }
         return "";
     }
@@ -69,7 +69,7 @@ public class CasesSatisfiabilityTableModel extends AbstractTableModel implements
             boolean variableState = (row % 2 == 1);
             JLabel label = new JLabel();
             label.setFont(new Font("Dialog", Font.PLAIN, 13));
-            label.setText("<html>" + value + " (" + (variableState ? "Prawda" : "Fałsz") + ")</html>");
+            label.setText("<html>" + value + " (" + (variableState ? "True" : "False") + ")</html>");
             if (variableState) label.setForeground(new Color(0, 214, 0));
             else label.setForeground(Color.red);
             JPanel panel = new JPanel(new FlowLayout(FlowLayout.CENTER, 15, 9));
@@ -80,15 +80,15 @@ public class CasesSatisfiabilityTableModel extends AbstractTableModel implements
             JLabel label = new JLabel();
             label.setFont(new Font("Dialog", Font.PLAIN, 13));
             if (z3Output == null) {
-                label.setText("<html><i>Obliczanie...</i></html>");
+                label.setText("<html><i>Running...</i></html>");
             } else if (z3Output.isUnknown()) {
-                label.setText("<html><b>Nie wiadomo</b></html>");
+                label.setText("<html><b>Unknown</b></html>");
                 label.setIcon(getIcon("question-sign.png"));
             } else if (z3Output.isSatisfiable()) {
-                label.setText("<html><b>Istnieje</b></html>");
+                label.setText("<html><b>Exists</b></html>");
                 label.setIcon(getIcon("checked.png"));
             } else {
-                label.setText("<html><b>Nie istnieje</b></html>");
+                label.setText("<html><b>Does not exist</b></html>");
                 label.setIcon(getIcon("cancel.png"));
             }
             JPanel panel = new JPanel(new FlowLayout(FlowLayout.CENTER, 15, 9));
