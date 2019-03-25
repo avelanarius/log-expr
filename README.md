@@ -6,7 +6,7 @@ It can be used to automatically **prove theorems**, **find counterexamples** or 
 ## Examples
 
 ### Prove that sum of two positive numbers is positive
-<img src="https://raw.githubusercontent.com/avelanarius/log-expr/documentation/img/sum_of_two_non_negative.PNG" height="550px">
+<img src="https://raw.githubusercontent.com/avelanarius/log-expr/master/img/sum_of_two_non_negative.PNG" height="550px">
 
 | Aspect | Description |
 | --- | --- |
@@ -16,7 +16,7 @@ It can be used to automatically **prove theorems**, **find counterexamples** or 
 | **Result** | **Condition is always true.** Theorem proved for all positive numbers. |
 
 ### Find solutions for logical expression
-<img src="https://raw.githubusercontent.com/avelanarius/log-expr/documentation/img/logical_expression.PNG" height="550px">
+<img src="https://raw.githubusercontent.com/avelanarius/log-expr/master/img/logical_expression.PNG" height="550px">
 
 | Aspect | Description |
 | --- | --- |
@@ -28,7 +28,7 @@ It can be used to automatically **prove theorems**, **find counterexamples** or 
 | True solution (1) | `a = true, b = true, c = true, d = false ` |
 
 ### Bussiness logic edge case exploration
-<img src="https://raw.githubusercontent.com/avelanarius/log-expr/documentation/img/business_logic.PNG" height="550px">
+<img src="https://raw.githubusercontent.com/avelanarius/log-expr/master/img/business_logic.PNG" height="550px">
 
 | Aspect | Description |
 | --- | --- |
